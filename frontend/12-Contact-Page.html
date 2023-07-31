@@ -192,54 +192,51 @@ CELLING FAN Installation</p>
          
          
          
-         <div class="contact-form">
-         
-         
-          <div class="tittle"><h2>Request Service or Estimate </h2>
-				<hr>
-              <p>Feel free to call us directly or simply complete our form below and we will follow up with you.</p>
-          </div>
-          
-          
-          <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted</div>          
-            
-            <form role="form" id="contact_form" method="post" onSubmit="return false">
-              <ul class="row">
-                <li class="col-sm-6">
-                 <label>name *
-                  <input type="text" class="form-control" name="name" id="name" placeholder="">
-                  </label>
-                </li>
-                <li class="col-sm-6">
-                 <label>Email * 
-                  <input type="text" class="form-control" name="email" id="email" placeholder="">
-                  </label>
-                </li>
-                <li class="col-sm-6">
-                 <label>Phone *
-                  <input type="text" class="form-control" name="company" id="company" placeholder="">
-                  </label>
-                </li>
-                <li class="col-sm-6">
-                 <label>Full Address
-                  <input type="text" class="form-control" name="website" id="website" placeholder="">
-                  </label>
-                </li>
-                
-                <li class="col-sm-12">
-                <label>Description of work or services needed
-                  <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea></label>
-                </li>
-                <li class="col-sm-12">
-                  <button type="submit" value="submit" class="btn" id="btn_submit" onClick="proceed();">send request</button>
-                </li>
-              </ul>
+          <div class="contact-form">
+            <div class="tittle">
+                <h2>Request Service or Estimate </h2>
+                <hr>
+                <p>Feel free to call us directly or simply complete our form below and we will follow up with you.</p>
+            </div>
+        
+            <div id="contact_message" class="success-msg">
+                <i class="fa fa-paper-plane-o"></i>Thank You. Your Message has been Submitted
+            </div>
+        
+            <form role="form" id="contact_form" method="post" action="send_email.php">
+                <ul class="row">
+                    <li class="col-sm-6">
+                        <label>Name *
+                            <input type="text" class="form-control" name="name" id="name" placeholder="" required>
+                        </label>
+                    </li>
+                    <li class="col-sm-6">
+                        <label>Email *
+                            <input type="email" class="form-control" name="email" id="email" placeholder="" required>
+                        </label>
+                    </li>
+                    <li class="col-sm-6">
+                        <label>Phone *
+                            <input type="text" class="form-control" name="phone" id="phone" placeholder="" required>
+                        </label>
+                    </li>
+                    <li class="col-sm-6">
+                        <label>Full Address
+                            <input type="text" class="form-control" name="address" id="address" placeholder="">
+                        </label>
+                    </li>
+                    <li class="col-sm-12">
+                        <label>Description of work or services needed
+                            <textarea class="form-control" name="message" id="message" rows="5" placeholder=""></textarea>
+                        </label>
+                    </li>
+                    <li class="col-sm-12">
+                        <button type="submit" value="submit" class="btn" id="btn_submit">send request</button>
+                    </li>
+                </ul>
             </form>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>  
+        
   
   
   <!--======= MAP =========-->

@@ -1,7 +1,7 @@
 <?php
 
 	// specify your email here
-	$to = 'adnan@webicode.com';
+	$to = 'odjobsj@gmail.com';
 
 	// Assigning data from $_POST array to variables
     if (isset($_POST['name'])) { $name = $_POST['name']; }
@@ -16,7 +16,7 @@
 	// Construct email body
 	$body_message .= 'Name: ' . $name . "\r\n";
 	$body_message .= 'Email: ' . $from . "\r\n";
-	$body_message .= 'Phone ' . $company . "\r\n";
+	$body_message .= 'Phone: ' . $company . "\r\n";
 	$body_message .= 'Full Address: ' . $website . "\r\n";
 	$body_message .= 'Message: ' . $message . "\r\n";
 
@@ -28,7 +28,7 @@
 
 	if ($mail_sent == true){ ?>
 		<script language="javascript" type="text/javascript">
-		window.alert("Sent Successfuly.");
+		window.alert("Sent Successfully.");
 		</script>
 	<?php } else { ?>
                 <script language="javascript" type="text/javascript">
@@ -36,7 +36,6 @@
                 </script>
 	<?php
 	} // End else
-    
 ?>
 
 <html>
@@ -54,18 +53,19 @@
         <td><?php echo $from; ?></td>
       </tr>
       <tr bgcolor="#eeeeff">
-        <td>Subject</td>
+        <td>Phone</td>
         <td><?php echo $company; ?></td>
       </tr>
       <tr bgcolor="#eeeeff">
-        <td>Website</td>
+        <td>Full Address</td>
         <td><?php echo $website; ?></td>
       </tr>
       
       <tr bgcolor="#eeeeff">
-        <td>Website</td>
+        <td>Message</td>
         <td><?php echo $message; ?></td>
       </tr>
     </table>
 </body>
 </html>
+
